@@ -37,12 +37,12 @@ const getKaohsiungWeather = async (req, res) => {
       {
         params: {
           Authorization: CWA_API_KEY,
-          locationName: "新北市",
+          locationName: "台北市",
         },
       }
     );
 
-    // 取得高雄市的天氣資料
+    // 取台北市的天氣資料
     const locationData = response.data.records.location[0];
 
     if (!locationData) {
